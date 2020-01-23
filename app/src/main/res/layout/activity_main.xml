@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCyan"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:textAlignment="center"
+    android:weightSum="1"
+    tools:context="com.example.kelvin.calculatorsci.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0.07"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="Enter two numbers"
+        android:textColor="@color/colorBlack"
+        android:textColorLink="?android:attr/editTextColor"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        tools:textStyle="bold|italic" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.07"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.07"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="0.03"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="0.03"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/btnMul"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="0.03"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="0.03"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/btnClr"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="0.03"
+            android:text="Clear" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="RESULT"
+        android:textColor="@color/colorBlack"
+        android:textColorLink="?android:attr/editTextColor"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        tools:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:text="0.00"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp" />
+</LinearLayout>
